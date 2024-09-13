@@ -1,59 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web with Navigation Buttons</title>
+    <title>Button Example</title>
     <style>
-        /* Styling the buttons */
-        .nav-button {
-            background-color: #008CBA; /* Blue background */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 10px 5px;
-            cursor: pointer;
-            border-radius: 8px;
+        /* Styling the button */
+        .my-button {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Make the button inline */
+            font-size: 16px; /* Increase font size */
+            margin: 10px 2px; /* Add some margin */
+            cursor: pointer; /* Pointer/hand icon on hover */
+            border-radius: 8px; /* Rounded corners */
         }
 
         /* Button hover effect */
-        .nav-button:hover {
-            background-color: #007bb5; /* Darker blue on hover */
-        }
-
-        /* General page styling */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        h1 {
-            margin-bottom: 20px;
-        }
-
-        .button-container {
-            margin-top: 20px;
+        .my-button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Webpage</h1>
-    <p>Navigate to different sections using the buttons below:</p>
+    <h1>Example Page with Button</h1>
 
-    <div class="button-container">
-        <!-- Navigation Buttons -->
-        <a href="portfolio.html" class="nav-button">Portfolio</a>
-        <a href="blog.html" class="nav-button">Blog</a>
-        <a href="cv.html" class="nav-button">CV</a>
-        <a href="about.html" class="nav-button">About</a>
-    </div>
+    <!-- Button element -->
+    <button class="my-button" onclick="buttonClicked()">Click Me!</button>
+
+    <!-- Output area -->
+    <p id="output"></p>
+
+    <script>
+        // JavaScript function to handle button click
+        function buttonClicked() {
+            document.getElementById("output").innerHTML = "Button clicked!";
+        }
+    </script>
 
 </body>
 </html>
